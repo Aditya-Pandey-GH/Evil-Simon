@@ -9,7 +9,7 @@ const App = () => {
 
 	return (
 		<>
-			<HashRouter>
+			<HashRouter basename={import.meta.env.BASE_URL}>
 				<Routes>
 					<Route path="/" element={<MainMenu />} />
 					<Route path="/game" element={<Game />} />
