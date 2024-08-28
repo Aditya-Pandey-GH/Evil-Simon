@@ -1,0 +1,227 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(35, 35, 35);
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.highScore {
+	font-family: "Genos";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+
+	& span {
+		float: right;
+		font-size: x-large;
+		margin-top: 0.5rem;
+		margin-right: 1rem;
+	}
+}
+
+.bigBox {
+	/* cursor: pointer; */
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.logoImg {
+	width: 20rem;
+	margin-bottom: 1rem;
+}
+
+#game_text {
+	cursor: pointer;
+	font-family: "Genos";
+	font-weight: 900;
+	display: block;
+	font-size: 3em;
+	text-align: center;
+	padding: 0rem;
+	border: none;
+	background: transparent;
+	color: white;
+	/* animation: chngclr 4s infinite; */
+	transition: 0.15s ease-in-out;
+}
+
+#game_text:hover {
+	color: rgb(175, 175, 175);
+	/* background: linear-gradient(to right, #AAAAAA, white, #AAAAAA);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent; */
+}
+
+/* @keyframes chngclr {
+	0% {
+		color: white;
+	}
+
+	20% {
+		color: #c0a915;
+	}
+
+	40% {
+		color: #008000;
+	}
+
+	60% {
+		color: #2a5faf;
+	}
+
+	80% {
+		color: #991919;
+	}
+
+	100% {
+		color: white;
+	}
+} */
+
+#in_game_text {
+	font-family: "Genos";
+	font-weight: 900;
+	font-size: 5em;
+	text-align: center;
+	line-height: 0em;
+	margin: 1em 0em;
+	padding: 0em 0em;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+#buttons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#buttons .box {
+	width: 12em;
+	height: 12em;
+	cursor: pointer;
+	flex-wrap: wrap;
+	border: 0.75em solid white;
+	border-radius: 3em;
+	margin: 1em;
+}
+
+#red {
+	background-color: #c80000;
+}
+
+#yellow {
+	background-color: #fee12b;
+}
+
+#blue {
+	background-color: #0064ff;
+}
+
+#green {
+	background-color: #008000;
+}
+
+#gbut {
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+#gbut:hover {
+	filter: brightness(50%);
+}
+
+/* #red:hover,
+#yellow:hover,
+#blue:hover,
+#green:hover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+
+#buttons .box:hover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#red:hover::before {
+	content: "Red";
+	font-family: "AngryBirds";
+	font-size: 3rem;
+	color: white;
+}
+
+#yellow:hover::before {
+	content: "Yellow";
+	font-family: "AngryBirds";
+	font-size: 3rem;
+	color: black;
+}
+
+#blue:hover::before {
+	content: "Blue";
+	font-family: "AngryBirds";
+	font-size: 3rem;
+	color: white;
+}
+
+#green:hover::before {
+	content: "Green";
+	font-family: "AngryBirds";
+	font-size: 3rem;
+	color: white;
+}
+
+@media screen and (max-width: 1024px) {
+	#buttons .box {
+		width: 8.5rem;
+		height: 8.5rem;
+		border: 0.5em solid white;
+		border-radius: 2em;
+		margin: 1em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	#buttons .box {
+		width: 30vw;
+		height: 30vw;
+		border: 0.5em solid white;
+		border-radius: 2em;
+		margin: 1em;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.logoImg {
+		width: 15rem;
+	}
+
+	#buttons .box:hover::before {
+		font-size: 2rem;
+	}
+}
