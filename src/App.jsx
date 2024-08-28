@@ -8,7 +8,7 @@ const App = () => {
 
 	return (
 		<>
-			<BrowserRouter basename={import.meta.env.BASE_URL}>
+			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<MainMenu />} />
 					<Route path="/game" element={<Game />} />
