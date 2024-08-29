@@ -9,7 +9,7 @@
 <p>
 	Hey pros. This is my 1st web based game, called Evil Simon.
 	As the name suggests, this Simon is Evil 👿 and speaks rudely 🤬, like an Evil.
-	This concept of the game is same as the original Simon Says game, but the Evil Simon has a bit of difficulty to offer, and you have to overcome that difficulty, by making and breaking high scores.
+	The concept of this game is same as the original Simon Says game, but the Evil Simon has a bit of difficulty to offer, and you have to overcome that difficulty, by making and breaking high scores.
 	The reason for it's difficulty that unlike the OG Simon Says game, where the entire series of nodes are blipped for each level, here only the new node will blip, and the player will have to remember the previous order.<br /><br />
 </p>
 
